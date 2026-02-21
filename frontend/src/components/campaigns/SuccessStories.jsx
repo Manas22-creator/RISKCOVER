@@ -3,7 +3,7 @@ import "./SuccessStories.css";
 import VideoModal from "../common/VideoModal";
 
 // replace with your real video
-import testimonialVideo from "../../assets/videos/customer-testimonial.mp4";
+// import testimonialVideo from "../../assets/videos/customer-testimonial.mp4";
 
 const SuccessStories = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
