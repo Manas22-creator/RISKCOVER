@@ -1,0 +1,29 @@
+/* src/components/campaigns/StatsSection.css */
+.stats-section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.stat-item {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  min-width: 250px;
+}
+.stat-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #007bff;
+}
+.stat-label {
+  font-size: 1.1rem;
+  color: #6c757d;
+}

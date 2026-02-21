@@ -1,0 +1,32 @@
+/* src/components/campaigns/CampaignsCta.css */
+.campaigns-cta-section {
+  background-color: var(--light-gray);
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.campaigns-cta-section h2 {
+  font-size: 2.5rem;
+}
+
+.campaigns-cta-section p {
+  margin: 1rem 0 2rem 0;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.cta-buttons .btn {
+  margin: 0 0.5rem;
+}
+
+/* Override for the white secondary button with a border */
+.campaigns-cta-section .btn-secondary {
+  background-color: var(--white);
+  color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+}
+
+.campaigns-cta-section .btn-secondary:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}

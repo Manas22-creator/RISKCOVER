@@ -1,0 +1,37 @@
+/* src/components/home/ReadyCta.css */
+.ready-cta-section {
+  background-color: #e9ecef;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.ready-cta-section h2 {
+  font-size: 2.5rem;
+}
+
+.ready-cta-section p {
+  margin: 1rem 0 2rem 0;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.cta-buttons .btn {
+  margin: 0 0.5rem;
+}
+
+
+/* src/components/home/ReadyCta.css */
+/* ... (existing styles) ... */
+
+@media (max-width: 768px) {
+  .ready-cta-section .cta-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 1rem;
+    align-items: center;
+  }
+  .ready-cta-section .btn {
+      width: 80%;
+      max-width: 300px;
+  }
+}

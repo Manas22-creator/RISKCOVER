@@ -1,0 +1,87 @@
+/* src/pages/GetQuotePage.css */
+.quote-form-container {
+  padding: 5rem 1.5rem;
+  background-color: var(--light-gray);
+}
+
+.quote-form-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Step Indicator Styles --- */
+.step-indicator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto 1rem auto;
+}
+
+.step-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.step-item.active .step-number {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.step-connector {
+  flex-grow: 1;
+  height: 4px;
+  background-color: #e9ecef;
+  transition: background-color 0.3s ease;
+}
+
+.step-connector.active {
+  background-color: var(--primary-blue);
+}
+
+.step-label {
+  text-align: center;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+/* --- Submission Status Styles --- */
+.submission-success {
+  text-align: center;
+  padding: 2rem;
+}
+
+.submission-success h2 {
+  color: var(--success-green);
+}
+
+
+@media (max-width: 768px) {
+  .quote-form-container {
+    padding: 2rem 1rem;
+  }
+
+  .quote-form-card {
+    padding: 1.5rem;
+  }
+}

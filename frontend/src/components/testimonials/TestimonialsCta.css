@@ -1,0 +1,44 @@
+/* src/components/testimonials/TestimonialsCta.css */
+.testimonials-cta-section {
+  background: linear-gradient(120deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+  padding: 4rem 1.5rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.testimonials-cta-section h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+}
+
+.testimonials-cta-section p {
+  margin: 1rem 0 2rem 0;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+.cta-buttons .btn {
+  margin: 0.5rem;
+}
+
+/* Custom button styles for this section */
+.btn-primary-white {
+  background-color: var(--white);
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.btn-primary-white:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-secondary-outline {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btn-secondary-outline:hover {
+    background-color: var(--white);
+    color: var(--primary-blue);
+}

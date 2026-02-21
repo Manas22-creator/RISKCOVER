@@ -1,0 +1,25 @@
+/* src/components/contact/OfficeLocations.css */
+.office-locations-section {
+  padding: 5rem 0;
+}
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.location-card {
+  border: 1px solid #e9ecef;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.location-card h3 { margin-bottom: 1rem; }
+.location-card p { line-height: 1.8; color: var(--text-secondary); }
+
+.map-section { text-align: center; }
+.map-section h3 { font-size: 2rem; }
+.map-section p { margin: 1rem 0 2rem 0; color: var(--text-secondary); }
+.map-placeholder {
+  border-radius: 10px;
+  overflow: hidden;
+}

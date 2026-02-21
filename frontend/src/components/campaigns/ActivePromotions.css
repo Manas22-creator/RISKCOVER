@@ -1,0 +1,82 @@
+/* src/components/campaigns/ActivePromotions.css */
+.active-promotions-section {
+  padding: 5rem 0;
+}
+
+.promotions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.promo-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+/* Alternate layout for every other card */
+.promotions-list .promo-card:nth-child(even) {
+  grid-template-columns: 1fr 1fr;
+}
+
+.promotions-list .promo-card:nth-child(even) .promo-image {
+  order: 2; /* Moves the image to the right */
+}
+
+.promo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.promo-content {
+  padding: 2rem;
+}
+
+.promo-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.promo-content p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.promo-features {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.promo-features li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.check-icon {
+  color: #22c55e;
+  margin-right: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .promo-card,
+  .promotions-list .promo-card:nth-child(even) {
+    grid-template-columns: 1fr; /* Stack all cards to a single column */
+  }
+  
+  .promotions-list .promo-card:nth-child(even) .promo-image {
+    order: 0; /* Reset the order so the image is always on top */
+  }
+
+  .promo-content {
+    padding: 1.5rem;
+  }
+}

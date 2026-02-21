@@ -1,0 +1,42 @@
+/* src/pages/FAQPage.css */
+.faq-section {
+  padding: 5rem 0;
+}
+
+.faq-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+}
+
+.faq-tabs button {
+  background-color: var(--white);
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.faq-tabs button:hover {
+  background-color: var(--light-gray);
+}
+
+.faq-tabs button.active {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border-color: var(--primary-blue);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+}
+
+.accordion-container {
+  max-width: 800px;
+  margin: 0 auto;
+}

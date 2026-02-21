@@ -1,0 +1,41 @@
+/* src/components/testimonials/TestimonialCard.css */
+.testimonial-page-card {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  border: 1px solid #e9ecef;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.star-rating {
+  color: #e0e0e0; /* Light gray for empty stars */
+  font-size: 1.2rem;
+}
+.star-rating .filled {
+  color: #ffc107; /* Gold for filled stars */
+}
+.verified-badge {
+  background-color: #e7f5ee;
+  color: #28a745;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.card-quote {
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+.card-author strong {
+  display: block;
+}
+.card-author span {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}

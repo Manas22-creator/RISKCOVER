@@ -1,0 +1,19 @@
+/* src/components/contact/ContactInfo.css */
+.contact-info-card {
+background: #f8f9fa;
+padding: 2rem;
+border-radius: 10px;
+}
+.contact-info-card p {
+line-height: 1.7;
+}
+.map-placeholder {
+margin-top: 1.5rem;
+height: 250px;
+background-color: #e9ecef;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #6c757d;
+border-radius: 5px;
+}

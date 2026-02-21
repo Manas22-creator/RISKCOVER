@@ -1,0 +1,51 @@
+/* src/components/about/AboutIntro.css */
+.about-intro-section {
+  padding: 5rem 0;
+}
+
+.about-intro-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-intro-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-intro-content p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.intro-buttons {
+    margin-top: 2rem;
+}
+
+.intro-buttons .btn {
+    margin-right: 1rem;
+}
+
+.about-intro-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .about-intro-container {
+    grid-template-columns: 1fr; /* Stack to a single column */
+    text-align: center;
+  }
+  .about-intro-image {
+    order: -1; /* Move the image to the top on mobile */
+    margin-bottom: 2rem;
+  }
+  .intro-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

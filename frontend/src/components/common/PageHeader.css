@@ -1,0 +1,20 @@
+/* src/components/common/PageHeader.css */
+.page-header {
+  background: linear-gradient(120deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.page-header h1 {
+  color: var(--white);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}

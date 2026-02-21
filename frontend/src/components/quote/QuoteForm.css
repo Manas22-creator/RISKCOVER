@@ -1,0 +1,79 @@
+/* src/components/quote/QuoteForm.css */
+.form-step-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-step-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input, .form-group select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.form-navigation .btn-prev {
+    background-color: var(--light-gray);
+    color: var(--text-secondary);
+}
+
+.review-list p {
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+}
+.review-list p:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr; /* Stack the form fields */
+  }
+}
+
+
+/* src/components/quote/QuoteForm.css */
+/* ... (all existing styles) ... */
+
+.error-text {
+  color: #dc3545; /* A standard red color for errors */
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.form-status {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+}

@@ -1,0 +1,180 @@
+/* src/components/home/HeroSection.css */
+.hero-section {
+  background: linear-gradient(120deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+  color: var(--white);
+  padding: 6rem 0;
+  overflow: hidden; /* Prevents horizontal scroll */
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* --- Left Column: Content --- */
+.hero-content h1 {
+  color: var(--white);
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content h1 .highlight-text {
+  color: #ffc107;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  max-width: 500px;
+}
+
+.hero-btns .btn {
+  margin: 0.5rem;
+  padding: 14px 32px;
+}
+
+.btn-quote {
+  background-color: #ffc107; /* Bright yellow */
+  color: var(--dark-blue);
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+}
+
+.btn-quote:hover {
+  background-color: #ffca2c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.4);
+}
+
+.hero-btns .btn-secondary {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.hero-btns .btn-secondary:hover {
+  background-color: var(--white);
+  color: var(--dark-blue);
+}
+
+.hero-stats-bar {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-item strong {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.stat-item span {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* --- Right Column: Image Card --- */
+.hero-image-column {
+  position: relative;
+}
+
+.hero-image-card {
+  background: var(--secondary-blue);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.hero-car-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-badge {
+  position: absolute;
+  background: var(--white);
+  color: var(--text-primary);
+  padding: 8px 16px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+.price-badge {
+  top: -20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.price-badge span {
+  font-size: 0.8rem;
+}
+
+.price-badge strong {
+  font-size: 1.2rem;
+  color: var(--dark-blue);
+}
+
+.coverage-badge {
+  bottom: 40px;
+  left: -30px;
+  background-color: var(--success-green);
+  color: var(--white);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-stats-bar {
+    justify-content: center;
+  }
+  .hero-image-column {
+    margin-top: 3rem;
+  }
+}
+
+
+/* src/components/home/HeroSection.css */
+/* ... (existing styles) ... */
+
+@media (max-width: 992px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-content {
+    /* This ensures the content is ordered first on mobile */
+    order: 2;
+  }
+  .hero-image-column {
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 3rem; /* Add space between image and text */
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-stats-bar {
+    justify-content: center;
+  }
+}
+
+

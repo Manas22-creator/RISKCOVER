@@ -1,0 +1,71 @@
+/* src/pages/TestimonialsPage.css */
+.testimonials-section {
+  padding: 5rem 0;
+}
+
+.stats-header {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.stat-item strong {
+  display: block;
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+}
+
+.stat-item span {
+  color: var(--text-secondary);
+}
+
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.filter-tabs button {
+  background-color: var(--light-gray);
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-tabs button:hover {
+    background-color: #dee2e6;
+}
+
+.filter-tabs button.active {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border-color: var(--primary-blue);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .stats-header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .filter-tabs {
+    gap: 0.5rem;
+  }
+
+  .filter-tabs button {
+    padding: 8px 16px;
+  }
+}

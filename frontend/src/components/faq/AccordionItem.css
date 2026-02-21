@@ -1,0 +1,42 @@
+/* src/components/faq/AccordionItem.css */
+.accordion-item {
+  border-bottom: 1px solid #dee2e6;
+  padding: 1.5rem 0;
+}
+
+.accordion-item:first-child {
+    border-top: 1px solid #dee2e6;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.accordion-title h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.accordion-title span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  transition: transform 0.3s ease;
+}
+
+.accordion-title span.open {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  margin-top: 1rem;
+  padding-right: 2rem; /* Give space for the +/- icon */
+  line-height: 1.7;
+  color: var(--text-secondary);
+}

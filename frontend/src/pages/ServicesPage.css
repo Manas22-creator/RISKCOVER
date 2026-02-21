@@ -1,0 +1,38 @@
+/* src/pages/ServicesPage.css */
+.services-content-section {
+  padding: 5rem 0;
+}
+
+.service-tabs {
+  /* display: flex;
+  justify-content: center;
+  gap: 1rem; */
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.tab-btn {
+  border: none;
+  background: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  color: var(--text-secondary);
+}
+
+.tab-btn.active {
+  color: var(--primary-blue);
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px; /* Sits on top of the border-bottom */
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-blue);
+  border-radius: 2px;
+}

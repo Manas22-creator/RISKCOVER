@@ -1,0 +1,61 @@
+/* src/components/services/PricingPlans.css */
+.pricing-plans-section {
+    padding: 5rem 0;
+    background-color: var(--light-gray);
+}
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center; /* Aligns cards vertically */
+}
+.pricing-card {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+.pricing-card.popular {
+    border: 2px solid var(--primary-blue);
+    transform: scale(1.05);
+    position: relative;
+}
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.price {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin: 1rem 0;
+}
+.price sup {
+    font-size: 1.5rem;
+    top: -1.5rem;
+}
+.price span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+.plan-description {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+.pricing-card .btn {
+    width: 100%;
+}

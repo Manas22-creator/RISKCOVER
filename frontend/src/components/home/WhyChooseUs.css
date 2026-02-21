@@ -1,0 +1,52 @@
+/* src/components/home/WhyChooseUs.css */
+.why-choose-us-section {
+  padding: 5rem 0;
+}
+
+.choose-us-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.choose-us-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.choose-us-content ul {
+  list-style: none;
+}
+
+.choose-us-content li {
+  margin-bottom: 2rem;
+}
+
+.choose-us-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.choose-us-content p {
+  color: var(--text-secondary);
+}
+
+.choose-us-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+/* src/components/home/WhyChooseUs.css */
+/* ... (existing styles) ... */
+
+@media (max-width: 768px) {
+  .choose-us-container {
+    grid-template-columns: 1fr; /* Stack to a single column */
+    text-align: center;
+  }
+  .choose-us-content ul {
+    text-align: left; /* Keep the list items left-aligned for readability */
+  }
+}

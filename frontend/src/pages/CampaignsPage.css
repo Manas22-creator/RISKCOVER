@@ -1,0 +1,20 @@
+/* src/pages/CampaignsPage.css */
+.campaigns-page-header {
+  text-align: center;
+  padding: 2rem;
+}
+.offers-section {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+.offers-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.offers-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}

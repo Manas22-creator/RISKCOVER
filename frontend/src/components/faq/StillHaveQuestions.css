@@ -1,0 +1,39 @@
+/* src/components/faq/StillHaveQuestions.css */
+.still-questions-section {
+    padding: 5rem 0;
+    background-color: var(--light-gray);
+}
+.contact-methods-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+.contact-method-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+.contact-method-card h3 {
+    margin-bottom: 0.5rem;
+}
+.contact-method-card > p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+.contact-link {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.contact-method-card span {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+.contact-method-card .btn {
+    margin-bottom: 1.5rem;
+    display: block;
+    width: 100%;
+}

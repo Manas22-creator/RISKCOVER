@@ -1,0 +1,15 @@
+/* src/components/contact/ContactFormSection.css */
+
+.contact-form-section {
+  padding: 5rem 0;
+  background-color: var(--light-gray);
+}
+
+.contact-form-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}

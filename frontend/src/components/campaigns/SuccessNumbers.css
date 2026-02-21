@@ -1,0 +1,79 @@
+/* src/components/campaigns/SuccessNumbers.css */
+
+.success-numbers-section {
+  background: linear-gradient(120deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+  color: var(--white);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.success-numbers-section .section-header h2,
+.success-numbers-section .section-header p {
+  color: var(--white);
+}
+
+.success-numbers-section .section-header p {
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 3.5rem;
+}
+
+/* ===== TOP STATS ===== */
+.numbers-top-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.number-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number-icon {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.number-item strong {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.number-item span {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* ===== BOTTOM CARDS ===== */
+.numbers-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.stats-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 14px;
+  backdrop-filter: blur(6px);
+}
+
+.stats-card h3 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--white);
+}
+
+.stats-card p {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.stats-card span {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}

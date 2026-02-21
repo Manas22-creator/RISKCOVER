@@ -1,0 +1,65 @@
+/* src/components/testimonials/TrustMetrics.css */
+
+.trust-metrics-section {
+  padding: 5rem 0;
+  background-color: var(--light-gray);
+}
+
+/* Header */
+.trust-metrics-section .section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.trust-metrics-section .section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.trust-metrics-section .section-header p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+/* Grid */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  text-align: center;
+}
+
+/* Metric Card */
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icon Circle */
+.metric-icon {
+  width: 64px;
+  height: 64px;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Number */
+.metric-item strong {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 0.4rem;
+}
+
+/* Label */
+.metric-item span {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+}
