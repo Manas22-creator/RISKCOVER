@@ -28,7 +28,8 @@ if (process.env.NODE_ENV === 'production') {
 
   // For any route that is not an API route, serve the main index.html file from the build folder.
   // This allows React Router to take over and handle client-side navigation.
-  app.get('*', (req, res) => {
+   // v-- THIS IS THE FIX --v
+  app.get(/^(?!\/api).*/, (req, res) => {
     res.sendFile(path.resolve(__dirname, '../frontend', 'build', 'index.html'));
   });
 }
