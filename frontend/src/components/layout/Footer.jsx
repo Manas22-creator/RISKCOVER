@@ -35,7 +35,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-column footer-about">
-            <img src={logo} alt="VehicleGuard" className="footer-logo" />
+            <img src={logo} alt="RiskCover Insurance" className="footer-logo" />
             <p>Your trusted partner for comprehensive vehicle insurance since 2010. Protecting your journey.</p>
              <div className="footer-socials">
     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -88,7 +88,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} VehicleGuard. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} RiskCover Insurance. All rights reserved.</p>
           <div className="footer-legal-links">
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>

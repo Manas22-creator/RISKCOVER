@@ -8,7 +8,7 @@ const TestimonialsCta = () => {
     <section className="testimonials-cta-section">
       <div className="container">
         <h2>Ready to Join Our Happy Customers?</h2>
-        <p>Experience the VehicleGuard difference for yourself. Get your free quote today.</p>
+        <p>Experience the RiskCover Insurance difference for yourself. Get your free quote today.</p>
         <div className="cta-buttons">
           <Link to="/get-quote" className="btn btn-primary-white">Get Free Quote</Link>
           <Link to="/contact" className="btn btn-secondary-outline">Contact Us</Link>

@@ -5,7 +5,7 @@ import './WhatsAppCta.css';
 
 // Replace with your registered WhatsApp phone number
 // Format: country code + phone number (e.g., 923001234567 for Pakistan, 11234567890 for USA)
-const WHATSAPP_NUMBER = '923001234567';
+const WHATSAPP_NUMBER = '+91 7503789405';
 
 const WhatsAppCta = () => {
   return (

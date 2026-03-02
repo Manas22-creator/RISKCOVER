@@ -14,13 +14,13 @@ const StillHaveQuestions = () => {
                     <div className="contact-method-card">
                         <h3>Call Us</h3>
                         <p>Speak with our experts</p>
-                        <a href="tel:1-800-VEHICLE-G" className="contact-link">1-800-VEHICLE-G</a>
+                        <a href="tel:+917503789405" className="contact-link">+91 7503789405</a>
                         <span>24/7 Support Available</span>
                     </div>
                     <div className="contact-method-card">
                         <h3>Email Us</h3>
                         <p>Get detailed answers</p>
-                        <a href="mailto:support@vehicleguard.com" className="contact-link">support@vehicleguard.com</a>
+                        <a href="mailto:support@riskcoverinsurance.com" className="contact-link">support@riskcoverinsurance.com</a>
                         <span>Response within 24 hours</span>
                     </div>
                     <div className="contact-method-card">

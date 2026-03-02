@@ -10,7 +10,7 @@ const faqData = {
   general: [
     { question: 'What types of vehicles do you insure?', answer: 'We insure a wide range of vehicles including cars, motorcycles, commercial trucks, and business fleets. Each category has specialized plans to fit your needs.' },
     { question: 'How quickly can I get a quote?', answer: 'You can get a personalized quote in just a few minutes through our online form. The process is quick, simple, and requires only basic information to get started.' },
-    { question: 'What makes VehicleGuard different from other insurers?', answer: 'We combine competitive pricing with exceptional customer service, a streamlined digital experience, and fast claims processing. Our focus is on making insurance transparent and hassle-free.' },
+    { question: 'What makes RiskCover Insurance different from other insurers?', answer: 'We combine competitive pricing with exceptional customer service, a streamlined digital experience, and fast claims processing. Our focus is on making insurance transparent and hassle-free.' },
     { question: 'Do you offer multi-vehicle discounts?', answer: 'Yes! We offer significant discounts when you insure multiple vehicles with us, whether it\'s for your family or your business fleet. Contact us for a consolidated quote.' },
   ],
   coverage: [

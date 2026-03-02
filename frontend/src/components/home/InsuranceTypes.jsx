@@ -16,40 +16,39 @@ const insuranceData = [
     title: 'Car Insurance',
     icon: <FaCar />,
     features: [
-      'Collision Coverage',
-      'Liability Protection',
-      'Uninsured Motorist',
-      '24/7 Roadside Assistance',
+'Collision Coverage',
+'Comprehensive Coverage',
+'Liability Coverage'
     ],
   },
   {
     title: 'Bike Insurance',
     icon: <FaMotorcycle />,
     features: [
-      'Theft & Damage',
+      'Theft Protection',
       'Third-Party Liability',
-      'Personal Accident Cover',
-      'Custom Parts Coverage',
+      'Personal Accident Cover'
+     
     ],
   },
   {
     title: 'Truck Insurance',
     icon: <FaTruck />,
     features: [
-      'Cargo Insurance',
-      'Primary Liability',
-      'Physical Damage',
-      'Downtime Protection',
+'Cargo Coverage',
+'Liability Coverage',
+'Specialized Truck Policies'
+
     ],
   },
   {
-    title: 'Fleet Insurance',
+    title: 'Commercial Insurance',
     icon: <FaUsers />,
     features: [
-      'Flexible Coverage',
-      'Simplified Billing',
-      'Fleet Safety Programs',
-      'Dedicated Account Manager',
+'Business Liability',
+'Fleet Insurance Solutions',
+"Flexible Coverage "
+
     ],
   },
 ];

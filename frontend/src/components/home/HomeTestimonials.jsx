@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import './HomeTestimonials.css';
 
 const testimonialsData = [
-  { name: 'Sarah Johnson', location: 'Honda Civic', stars: 5, quote: '"VehicleGuard made getting car insurance so easy and affordable. The claim process was fantastic!"' },
-  { name: 'Mike Rodriguez', location: 'Ford F-150', stars: 5, quote: '"Perfect bike insurance coverage. Their team was professional and the online platform is very easy to use."' },
-  { name: 'Emily Chen', location: 'Fleet Manager', stars: 5, quote: '"Saved hundreds on my truck insurance while getting better coverage. Highly recommended!"' },
+  { name: 'Raj Gupta', location: 'Honda Civic', stars: 5, quote: '"RiskCover Insurance made getting car insurance so easy and affordable. The claim process was fantastic!"' },
+  { name: 'Satish Pal', location: 'Ford F-150', stars: 5, quote: '"Perfect bike insurance coverage. Their team was professional and the online platform is very easy to use."' },
+  { name: 'Om Singh', location: 'Fleet Manager', stars: 5, quote: '"Saved hundreds on my truck insurance while getting better coverage. Highly recommended!"' },
 ];
 
 // A small helper component to render stars

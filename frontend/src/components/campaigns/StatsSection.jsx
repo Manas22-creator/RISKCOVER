@@ -3,9 +3,9 @@ import React from 'react';
 import './StatsSection.css';
 
 const statsData = [
-  { value: '500K+', label: 'Vehicles Insured' },
+  { value: '1000+', label: 'Vehicles Insured' },
   { value: '98%', label: 'Claim Success Rate' },
-  { value: '1.2M+', label: 'Happy Clients' },
+  { value: '5000+', label: 'Happy Clients' },
 ];
 
 const StatsSection = () => {

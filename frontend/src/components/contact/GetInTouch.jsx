@@ -19,8 +19,8 @@ const GetInTouch = () => {
             </div>
             <h3>Phone Support</h3>
             <p>24/7 Customer Support, Toll-free nationwide</p>
-            <a href="tel:1-800-VEHICLE-G" className="contact-link">
-              1-800-VEHICLE-G
+            <a href="tel:+917503789405" className="contact-link">
+              +91 7503789405
             </a>
           </div>
 
@@ -30,8 +30,8 @@ const GetInTouch = () => {
             </div>
             <h3>Email Support</h3>
             <p>Send us your questions, Response within 24 hours</p>
-            <a href="mailto:support@vehicleguard.com" className="contact-link">
-              support@vehicleguard.com
+            <a href="mailto:support@riskcoverinsurance.com" className="contact-link">
+              support@riskcoverinsurance.com
             </a>
           </div>
 
@@ -51,9 +51,10 @@ const GetInTouch = () => {
               <FiMapPin />
             </div>
             <h3>Visit Us</h3>
-            <p>Our headquarters</p>
+            <p>Our Office</p>
             <span className="contact-link">
-              123 Insurance Blvd, Suite 100
+              RiskCover Insurance Pvt Ltd
+              C10, Rajan Vihar, Maharani Enclave, Hastsal, New Delhi, Delhi, 110059
             </span>
           </div>
         </div>

@@ -34,7 +34,7 @@ const servicesData = {
 
   },
   fleet: {
-    title: 'Fleet Insurance',
+    title: 'Commercial Insurance',
     description: 'Streamlined insurance solutions for your entire fleet of commercial vehicles. Simplify your management with a single policy and dedicated support.',
     features: ['Coverage for All Vehicle Types', 'Simplified Billing & Policy Management', 'Fleet Safety Programs & Discounts', 'Dedicated Account Manager', 'GPS Tracking Discounts', 'Hired & Non-Owned Auto'],
     image: fleetInsuranceImage,

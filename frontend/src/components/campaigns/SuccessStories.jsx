@@ -28,12 +28,14 @@ const SuccessStories = () => {
 
           <div className="testimonial-text">
             <p>
-              "When I had an accident last month, VehicleGuard processed my
+              "When I had an accident last month, RiskCover Insurance processed my
               claim in less than 24 hours. Their support team was incredible and
               made a stressful situation much easier."
             </p>
-            <strong>Jessica Martinez</strong>
-            <span>Los Angeles, CA</span>
+            <strong>
+              - Ramesh Kumar, 
+            </strong>
+            <span>Mumbai, Maharashtra</span>
           </div>
         </div>
       </div>

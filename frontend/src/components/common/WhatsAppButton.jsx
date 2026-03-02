@@ -21,7 +21,7 @@
 // const WhatsAppButton = () => {
 //   // Replace with your actual WhatsApp number and message
 //   const phoneNumber = "1234567890";
-//   const message = "Hello! I'd like to get a quote from VehicleGuard.";
+//   const message = "Hello! I'd like to get a quote from RiskCover Insurance.";
 //   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
 //   return (
@@ -63,8 +63,8 @@ const WhatsAppIcon = () => (
 );
 
 const WhatsAppButton = () => {
-  const phoneNumber = "1234567890"; // Replace with your number
-  const message = "Hello! I'd like to get a quote from VehicleGuard.";
+  const phoneNumber = "7503789405"; // Replace with your number
+  const message = "Hello! I'd like to get a quote from RiskCover Insurance.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (

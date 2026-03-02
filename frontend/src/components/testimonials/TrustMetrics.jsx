@@ -26,7 +26,7 @@ const TrustMetrics = () => {
             <div className="metric-icon">
               <FaUsers />
             </div>
-            <strong>500K+</strong>
+            <strong>500+</strong>
             <span>Happy Customers</span>
           </div>
 
@@ -34,7 +34,7 @@ const TrustMetrics = () => {
             <div className="metric-icon">
               <FaAward />
             </div>
-            <strong>15+</strong>
+            <strong>10+</strong>
             <span>Years Experience</span>
           </div>
 
@@ -50,7 +50,7 @@ const TrustMetrics = () => {
             <div className="metric-icon">
               <FaShieldAlt />
             </div>
-            <strong>99.2%</strong>
+            <strong>98.2%</strong>
             <span>Claim Success</span>
           </div>
 

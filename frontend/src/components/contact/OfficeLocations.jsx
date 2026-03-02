@@ -7,37 +7,36 @@ const OfficeLocations = () => {
     <section className="office-locations-section">
       <div className="container">
         <div className="section-header">
-          <h2>Our Offices</h2>
-          <p>Visit us at one of our convenient locations.</p>
+          <h2>Coming Soon</h2>
+          <p>Our office locations will be available soon. Stay tuned!</p>
         </div>
+
+        {/* COMMENTED OUT - Office Locations Content */}
+        {/* 
         <div className="locations-grid">
           <div className="location-card">
-            <h3>New York</h3>
-            <p>123 Insurance Blvd, Suite 100</p>
-            <p>(212) 555-0100</p>
-            <p>Mon-Fri: 9AM-5PM EST</p>
+            <h3>New Delhi</h3>
+            <p>C10, Rajan Vihar, Maharani Enclave, Hastsal, New Delhi, Delhi, 110059</p>
+            <p>(+91) 7503789405</p>
+            <p>Mon-Fri: 9AM-5PM IST</p>
           </div>
           <div className="location-card">
-            <h3>Los Angeles</h3>
-            <p>456 Pacific Coast Hwy, Floor 15</p>
-            <p>(310) 555-0200</p>
+            <h3>Mumbai</h3>
+
+            <p>A-201, 2nd Floor, Leela Business Park, Nr. Airport Road Metro Station, Andheri Kurla Road, Andheri (East), Mumbai – 400059</p>
+            <p>(+91) 7503789405</p>
             <p>Mon-Fri: 9AM-5PM PST</p>
-          </div>
-          <div className="location-card">
-            <h3>Chicago</h3>
-            <p>789 Lake Shore Dr, Suite 500</p>
-            <p>(312) 555-0300</p>
-            <p>Mon-Fri: 9AM-5PM CST</p>
           </div>
         </div>
 
         {/* Map Section */}
+        {/*
         <div className="map-section">
             <h3>Find Us</h3>
             <p>Map integration for our headquarters location presented here.</p>
             <div className="map-placeholder">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.219992030013!2d-73.98785368459395!3d40.75797497932692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6434221%3A0x23e3717a63b01fa2!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1672533098529!5m2!1sen!2sus" 
+                    src="https://www.google.com/maps/place/J.T+Lancer's+Public+School/@28.6334819,77.0495878,17z/data=!3m1!4b1!4m6!3m5!1s0x390d05000c0a6937:0xb934542172402dcd!8m2!3d28.6334819!4d77.0495878!16s%2Fg%2F11w1zd2zkd!17m2!4m1!1e3!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D" 
                     width="100%" 
                     height="450" 
                     style={{ border: 0 }} 
@@ -48,6 +47,7 @@ const OfficeLocations = () => {
                 ></iframe>
             </div>
         </div>
+        */}
       </div>
     </section>
   );

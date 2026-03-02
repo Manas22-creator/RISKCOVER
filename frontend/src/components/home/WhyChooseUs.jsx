@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
     <section className="why-choose-us-section">
       <div className="container choose-us-container">
         <div className="choose-us-content">
-          <h2>Why Choose VehicleGuard?</h2>
+          <h2>Why Choose RiskCover Insurance?</h2>
           <ul>
             <li>
               <h3>Comprehensive Coverage</h3>

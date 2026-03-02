@@ -17,13 +17,13 @@ const SuccessNumbers = () => {
         <div className="numbers-top-grid">
           <div className="number-item">
             <div className="number-icon">🚗</div>
-            <strong>500K+</strong>
+            <strong>1000+</strong>
             <span>Insured Vehicles</span>
           </div>
 
           <div className="number-item">
             <div className="number-icon">✅</div>
-            <strong>99.2%</strong>
+            <strong>98.2%</strong>
             <span>Claim Success Rate</span>
           </div>
 
@@ -35,7 +35,7 @@ const SuccessNumbers = () => {
 
           <div className="number-item">
             <div className="number-icon">🏆</div>
-            <strong>15+</strong>
+            <strong>10+</strong>
             <span>Years Experience</span>
           </div>
         </div>
@@ -43,7 +43,7 @@ const SuccessNumbers = () => {
         {/* BOTTOM CARDS */}
         <div className="numbers-bottom-grid">
           <div className="stats-card">
-            <h3>$2.5M</h3>
+            <h3>500+</h3>
             <p>Claims paid out last month</p>
             <span>Fast and fair claim settlements</span>
           </div>

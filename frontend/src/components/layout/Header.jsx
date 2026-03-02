@@ -23,7 +23,7 @@ const Header = () => {
       <div className="container header-container">
         <div className="logo">
           <Link to="/" onClick={closeMenu}>
-            <img src={logo} alt="VehicleGuard Logo" />
+            <img src={logo} alt="RiskCover Insurance Logo" />
           </Link>
         </div>
 
