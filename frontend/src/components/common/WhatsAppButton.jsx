@@ -66,11 +66,9 @@ const WhatsAppIcon = () => (
 
 const WhatsAppButton = () => {
   const phoneNumber = "7503789405"; // Replace with your number
-<<<<<<< HEAD
+
   const message = "Hello! I'd like to get a quote from RiskCover Insurance.";
-=======
-  const message = "Hello! I'd like to get a quote from VehicleGuard.";
->>>>>>> 03256574614b48b8ac3efaeb4f06884043292482
+
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
