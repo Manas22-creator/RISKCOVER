@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./SuccessStories.css";
-import VideoModal from "../common/VideoModal";
+// import VideoModal from "../common/VideoModal";
 
 // replace with your real video
-import testimonialVideo from "../../assets/videos/customer-testimonial.mp4";
+// import testimonialVideo from "../../assets/videos/customer-testimonial.mp4";
 
 const SuccessStories = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -40,11 +40,11 @@ const SuccessStories = () => {
         </div>
       </div>
 
-      <VideoModal
+      {/* <VideoModal
         isOpen={isVideoOpen}
         onClose={() => setIsVideoOpen(false)}
         videoSrc={testimonialVideo}
-      />
+      /> */}
     </section>
   );
 };
