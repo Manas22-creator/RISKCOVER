@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // // src/components/common/WhatsAppButton.js
 // import React from 'react';
 // import './WhatsAppButton.css';
@@ -42,8 +42,7 @@
 
 
 
-=======
->>>>>>> 03256574614b48b8ac3efaeb4f06884043292482
+
 // src/components/common/WhatsAppButton.jsx
 import React from 'react';
 import './WhatsAppButton.css';
