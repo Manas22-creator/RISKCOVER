@@ -12,8 +12,8 @@ const AboutUsPage = () => {
   return (
     <div>
       <PageHeader
-        title="About VehicleGuard"
-        subtitle="For over a decade, we've been committed to protecting what matters most to you - your vehicles and your peace of mind."
+        title="About RiskCover"
+        subtitle=" For over a decade, we've been committed to protecting what matters most to you - your vehicles, your health, and your peace of mind."
       />
       <AboutIntro />
       <CoreValues />

@@ -11,6 +11,10 @@ import carInsuranceImage from '../assets/images/service-car.jpg';
 import bikeInsuranceImage from '../assets/images/service-bike.jpg';
 import truckInsuranceImage from '../assets/images/service-truck.jpg';
 import fleetInsuranceImage from '../assets/images/service-fleet.jpg';
+import healthInsuranceImage from '../assets/images/service-health.jpg';
+import lifeInsuranceImage from '../assets/images/service-life.jpg';
+import shopInsuranceImage from '../assets/images/service-shop.jpg';
+
 
 // Data for our services. In a real app, this could come from an API.
 const servicesData = {
@@ -38,6 +42,24 @@ const servicesData = {
     description: 'Streamlined insurance solutions for your entire fleet of commercial vehicles. Simplify your management with a single policy and dedicated support.',
     features: ['Coverage for All Vehicle Types', 'Simplified Billing & Policy Management', 'Fleet Safety Programs & Discounts', 'Dedicated Account Manager', 'GPS Tracking Discounts', 'Hired & Non-Owned Auto'],
     image: fleetInsuranceImage,
+  },
+  Health: {
+    title: 'Health Insurance',
+    description: 'Cashless suvidha and comprehensive medical coverage for you and your family.',
+    features: ['Cashless Hospitalization', 'Comprehensive Medical Coverage', 'Family Floater Plans', 'Critical Illness Coverage', 'Maternity Benefits', 'No Claim Bonus'],
+    image: healthInsuranceImage,
+  },
+  Life: {
+    title: 'Life Insurance (LIC & Private)',
+    description: 'LIC & Private life insurance plans to secure your family\'s future.', 
+    features: ['Term Life Plans', 'Whole Life Plans', 'Endowment Plans', 'Child Plans', 'Retirement Plans', 'Critical Illness Riders'],
+    image: lifeInsuranceImage,
+  },
+  Shop: {
+    title: 'Shop & Fire Insurance',
+    description: 'Protect your business assets against fire, theft, and natural disasters.',
+    features: ['Fire & Allied Perils', 'Burglary & Theft', 'Public Liability', 'Business Interruption', 'Money Insurance', 'Electronic Equipment Coverage'],
+    image: shopInsuranceImage,
   },
 };
 
@@ -78,7 +100,25 @@ const ServicesPage = () => {
               className={`tab-btn ${activeService === 'fleet' ? 'active' : ''}`}
               onClick={() => setActiveService('fleet')}
             >
-              Fleet Insurance
+              Commercial Insurance
+            </button>
+            <button
+              className={`tab-btn ${activeService === 'Health' ? 'active' : ''}`}
+              onClick={() => setActiveService('Health')}
+            >
+              Health Insurance
+            </button>
+            <button
+              className={`tab-btn ${activeService === 'Life' ? 'active' : ''}`}
+              onClick={() => setActiveService('Life')}
+            >
+              Life Insurance
+            </button>
+            <button
+              className={`tab-btn ${activeService === 'Shop' ? 'active' : ''}`}
+              onClick={() => setActiveService('Shop')}
+            >
+              Shop & Fire Insurance
             </button>
           </div>
 

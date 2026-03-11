@@ -2,71 +2,129 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import PageHeader from '../components/common/PageHeader.jsx';
-import Step1_DataEntry from '../components/quote/Step1_DataEntry.jsx'; // Renamed for clarity
-import Step2_Review from '../components/quote/Step2_Review.jsx';     // Renamed for clarity
+import VehicleQuoteFields from '../components/quote/VehicleQuoteFields.jsx';
+import GeneralQuoteFields from '../components/quote/GeneralQuoteFields.jsx';
+import Step2_Review from '../components/quote/Step2_Review.jsx';
+import { validateQuoteForm } from '../utils/validation.js';
 import './GetQuotePage.css';
+
+// Define which categories use which form
+const vehicleCategories = ['Car', 'Bike', 'Scooter', 'Commercial Vehicle', 'Other'];
+const generalCategories = ['Health Insurance', 'Life Insurance', 'Shop & Fire Insurance'];
+const allCategories = [...vehicleCategories, ...generalCategories];
 
 const GetQuotePage = () => {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
-    vehicleType: '',
+    inquiryType: '',
+    vehicleNumber: '',
     fullName: '',
     email: '',
     phone: '',
-    // Use null for file inputs initially
-    previousPolicy: null,
-    uploadRC: null,
   });
   const [status, setStatus] = useState('');
   const [errors, setErrors] = useState({});
 
-  const nextStep = () => setStep(prev => prev + 1);
+   const nextStep = () => {
+    // 1. Clear previous errors
+    setErrors({});
+    
+    // 2. Determine if it's a vehicle quote
+    const isVehicleQuote = vehicleCategories.includes(formData.inquiryType);
+    
+    // 3. Run validation
+    const validationErrors = validateQuoteForm(formData, isVehicleQuote);
+    
+    // 4. Check for errors
+    if (Object.keys(validationErrors).length > 0) {
+      // If there are errors, set them in state and DO NOT proceed
+      setErrors(validationErrors);
+    } else {
+      // If there are no errors, proceed to the next step
+      setStep(prev => prev + 1);
+    }
+  };
+
+
+
+
+
   const prevStep = () => setStep(prev => prev - 1);
 
   const handleChange = input => e => {
-    setFormData({ ...formData, [input]: e.target.value });
-  };
-  
-  // Special handler for file inputs
-  const handleFileChange = input => e => {
-    setFormData({ ...formData, [input]: e.target.files[0] });
+    setFormData(prev => ({ ...prev, [input]: e.target.value }));
+    if (errors[input]) {
+      setErrors(prev => ({ ...prev, [input]: null }));
+    }
   };
 
   const handleSubmit = async () => {
     setStatus('Submitting...');
     setErrors({});
 
-    // Use FormData to send text and files together
-    const submissionData = new FormData();
-    for (const key in formData) {
-      submissionData.append(key, formData[key]);
+    const isVehicleQuote = vehicleCategories.includes(formData.inquiryType);
+    const url = isVehicleQuote ? '/api/quotes' : '/api/general-quotes';
+    
+    let dataToSend = { ...formData };
+    if (isVehicleQuote) {
+      dataToSend.vehicleType = dataToSend.inquiryType;
+      delete dataToSend.inquiryType;
     }
 
     try {
-      const res = await axios.post('/api/quotes', submissionData, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
-      setStatus(`Success! Your quote request has been received.We will contact you shortly.`);
-      // Advance to a "success" step visually
-      setStep(3);
+      const res = await axios.post(url, dataToSend);
+      setStatus(res.data.msg || 'Your request has been submitted successfully!');
+      setStep(3); // Go to success step
     } catch (error) {
-      // ... (error handling logic remains the same)
+      if (error.response && error.response.status === 400) {
+        const errorData = error.response.data.errors;
+        const formattedErrors = {};
+        errorData.forEach(err => { formattedErrors[err.path] = err.msg; });
+        setErrors(formattedErrors);
+        setStatus('Please correct the errors before submitting.');
+        setStep(1); // Go back to the form step if there are errors
+      } else {
+        setStatus('An unexpected error occurred. Please try again.');
+      }
     }
   };
 
-  const renderStep = () => {
+  const renderFormFields = () => {
+    if (vehicleCategories.includes(formData.inquiryType)) {
+      return <VehicleQuoteFields values={formData} handleChange={handleChange} errors={errors} />;
+    }
+    if (generalCategories.includes(formData.inquiryType)) {
+      return <GeneralQuoteFields values={formData} handleChange={handleChange} errors={errors} />;
+    }
+    return null; // Show no additional fields until a type is selected
+  };
+  
+  const renderStepContent = () => {
     switch (step) {
       case 1:
         return (
-          <Step1_DataEntry
-            nextStep={nextStep}
-            handleChange={handleChange}
-            handleFileChange={handleFileChange}
-            values={formData}
-            errors={errors}
-          />
+          <div className="form-step-container">
+            <h2>Your Details</h2>
+            <div className="form-group full-width">
+              <label htmlFor="inquiryType">Select Insurance Type *</label>
+              <select id="inquiryType" name="inquiryType" value={formData.inquiryType} onChange={handleChange('inquiryType')} required>
+                <option value="">-- Select an Option --</option>
+                <optgroup label="Vehicle Insurance">
+                  {vehicleCategories.map(cat => <option key={cat} value={cat}>{cat}</option>)}
+                </optgroup>
+                <optgroup label="Other Insurance">
+                  {generalCategories.map(cat => <option key={cat} value={cat}>{cat}</option>)}
+                </optgroup>
+              </select>
+              {errors.inquiryType && <p className="error-text">{errors.inquiryType}</p>}
+            </div>
+            {renderFormFields()}
+            {formData.inquiryType && (
+              <div className="form-navigation" style={{ justifyContent: 'flex-end' }}>
+                <button className="btn btn-primary" onClick={nextStep}>Review Details</button>
+              </div>
+            )}
+          </div>
         );
       case 2:
         return (
@@ -75,17 +133,18 @@ const GetQuotePage = () => {
             handleSubmit={handleSubmit}
             values={formData}
             status={status}
+            isVehicleQuote={vehicleCategories.includes(formData.inquiryType)}
           />
         );
-      case 3: // Success step
+      case 3:
         return (
-            <div className="submission-success">
-              <h2>Thank You!</h2>
-              <p>{status}</p>
-            </div>
+          <div className="submission-success">
+            <h2>Thank You!</h2>
+            <p>{status}</p>
+          </div>
         );
       default:
-        return <div>Error</div>;
+        return null;
     }
   };
 
@@ -103,7 +162,7 @@ const GetQuotePage = () => {
             <div className={`step-item ${step >= 2 ? 'active' : ''}`}><div className="step-number">2</div></div>
           </div>
           <div className="step-label">{step < 3 ? `Step ${step} of 2` : 'Complete'}</div>
-          {renderStep()}
+          {renderStepContent()}
         </div>
       </div>
     </div>

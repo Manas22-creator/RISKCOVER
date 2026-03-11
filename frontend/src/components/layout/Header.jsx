@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import './Header.css';
-import logo from '../../assets/images/Car-logo header.png';
+import logo from '../../assets/images/RC Insurance.png';
 
 const Header = () => {
   // State to manage the mobile menu's open/close status

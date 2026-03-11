@@ -30,7 +30,7 @@ const TestimonialsPage = () => {
     <div>
       <PageHeader
         title="Customer Testimonials"
-        subtitle="Don't just take our word for it. See what our satisfied customers have to say about their experience with VehicleGuard."
+        subtitle="Don't just take our word for it. See what our satisfied customers have to say about their experience with RiskCover."
       />
 
       <section className="testimonials-section">

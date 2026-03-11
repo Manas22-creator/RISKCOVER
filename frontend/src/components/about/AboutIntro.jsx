@@ -9,7 +9,7 @@ const AboutIntro = () => {
       <div className="container about-intro-container">
         <div className="about-intro-content">
           <h2>Our Mission</h2>
-          <p>We believe that quality vehicle insurance should be accessible, affordable, and simple to understand. Our mission is to protect our customers with comprehensive coverage they can depend on.</p>
+          <p>We believe that quality insurance should be accessible, affordable, and simple to understand. Our mission is to protect our customers with comprehensive coverage they can depend on.</p>
           <p>We combine cutting-edge technology with human expertise to deliver personalized insurance solutions that adapt to your unique needs and lifestyle.</p>
           {/* The design shows two buttons here, you can link them as needed */}
           <div className="intro-buttons">
@@ -26,3 +26,4 @@ const AboutIntro = () => {
 };
 
 export default AboutIntro;
+

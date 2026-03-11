@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './Footer.css';
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import logo from '../../assets/images/Car-logo footer.png'; // Assuming your logo is named logo.svg
+import logo from '../../assets/images/RC Insurance footer.png'; // Assuming your logo is named logo.svg
 
 const Footer = () => {
   const [email, setEmail] = useState('');

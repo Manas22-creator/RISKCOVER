@@ -12,32 +12,50 @@
 
 .section-header h2 {
   font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 1rem;
+  color: var(--text-dark);
 }
 
 .section-header p {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* GRID */
 .insurance-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+
+/* Responsive grid */
+@media (max-width: 1024px) {
+  .insurance-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .insurance-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* CARD */
 .insurance-card {
   background: var(--white);
-  padding: 2.5rem 2rem;
+  padding: 2rem 2rem;
   border-radius: 12px;
   border: 1px solid #e9ecef;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .insurance-card:hover {
@@ -47,40 +65,41 @@
 
 /* ICON */
 .insurance-icon {
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   border-radius: 12px;
   background-color: var(--primary-blue);
   color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 26px;
-  margin-bottom: 1.5rem;
+  font-size: 32px;
+  margin: 0 auto 1.5rem;
 }
 
 /* TITLE */
 .insurance-card h3 {
   margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-dark);
 }
 
-/* LIST */
-.insurance-card ul {
-  list-style-type: '✓ ';
-  padding-left: 1.5rem;
-  flex-grow: 1;
-}
-
-.insurance-card ul li {
-  margin-bottom: 0.5rem;
+/* DESCRIPTION */
+.card-description {
   color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
 }
 
 /* LINK */
 .learn-more-link {
   font-weight: 600;
-  margin-top: 1.5rem;
   color: var(--primary-blue);
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
 }
 
 .learn-more-link:hover {

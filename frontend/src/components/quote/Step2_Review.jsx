@@ -2,24 +2,29 @@
 import React from 'react';
 import './QuoteForm.css';
 
-const Step2_Review = ({ prevStep, handleSubmit, values, status }) => {
-  const { vehicleType, fullName, email, phone, previousPolicy, uploadRC } = values;
-
+const Step2_Review = ({ prevStep, handleSubmit, values, status, isVehicleQuote }) => {
   return (
     <div className="form-step-container">
       <h2>Review Your Details</h2>
       <div className="review-list">
-        <p><strong>Vehicle Type:</strong> {vehicleType}</p>
-        <p><strong>Full Name:</strong> {fullName}</p>
-        <p><strong>Email:</strong> {email}</p>
-        <p><strong>Phone Number:</strong> {phone}</p>
-        <p><strong>Previous Policy File:</strong> {previousPolicy ? previousPolicy.name : 'Not selected'}</p>
-        <p><strong>RC File:</strong> {uploadRC ? uploadRC.name : 'Not selected'}</p>
+        <p><strong>Insurance Type:</strong> {values.inquiryType}</p>
+        
+        {/* Conditionally render vehicle-specific fields */}
+        {isVehicleQuote && (
+          <p><strong>Vehicle Number:</strong> {values.vehicleNumber}</p>
+        )}
+        
+        {/* Common fields */}
+        <p><strong>Full Name:</strong> {values.fullName}</p>
+        <p><strong>Email:</strong> {values.email}</p>
+        <p><strong>Phone Number:</strong> {values.phone}</p>
       </div>
+
       {status && <p className="form-status">{status}</p>}
+
       <div className="form-navigation">
         <button className="btn btn-prev" onClick={prevStep}>Go Back</button>
-        <button className="btn btn-primary" onClick={handleSubmit}>Submit Now</button>
+        <button className="btn btn-primary" onClick={handleSubmit}>Submit Request</button>
       </div>
     </div>
   );

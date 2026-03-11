@@ -1,55 +1,46 @@
 // src/components/home/InsuranceTypes.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MdLocalShipping } from "react-icons/md";
-
 import {
   FaCar,
   FaMotorcycle,
   FaTruck,
-  FaUsers
-} from 'react-icons/fa';
+  FaHeartPulse,
+  FaShieldHalved,
+  FaBriefcase
+} from 'react-icons/fa6';
 import './InsuranceTypes.css';
 
 const insuranceData = [
   {
     title: 'Car Insurance',
     icon: <FaCar />,
-    features: [
-'Collision Coverage',
-'Comprehensive Coverage',
-'Liability Coverage'
-    ],
+    description: 'Comprehensive coverage for your personal vehicle with competitive rates.',
   },
   {
     title: 'Bike Insurance',
     icon: <FaMotorcycle />,
-    features: [
-      'Theft Protection',
-      'Third-Party Liability',
-      'Personal Accident Cover'
-     
-    ],
+    description: 'Protect your two-wheeler against theft, accidents, and third-party liabilities.',
   },
   {
-    title: 'Truck Insurance',
+    title: 'Commercial Vehicle',
     icon: <FaTruck />,
-    features: [
-'Cargo Coverage',
-'Liability Coverage',
-'Specialized Truck Policies'
-
-    ],
+    description: 'Specialized insurance for taxis, trucks, and business fleets.',
   },
   {
-    title: 'Commercial Insurance',
-    icon: <FaUsers />,
-    features: [
-'Business Liability',
-'Fleet Insurance Solutions',
-"Flexible Coverage "
-
-    ],
+    title: 'Health Insurance',
+    icon: <FaHeartPulse />,
+    description: 'Cashless suvidha and comprehensive medical coverage for you and your family.',
+  },
+  {
+    title: 'Life Insurance',
+    icon: <FaShieldHalved />,
+    description: 'LIC & Private life insurance plans to secure your family\'s future.',
+  },
+  {
+    title: 'Shop & Fire Insurance',
+    icon: <FaBriefcase />,
+    description: 'Protect your business assets against fire, theft, and natural disasters.',
   },
 ];
 
@@ -58,10 +49,10 @@ const InsuranceTypes = () => {
     <section className="insurance-types-section">
       <div className="container">
         <div className="section-header">
-          <h2>Insurance for Every Vehicle</h2>
+          <h2>Insurance for Every Need</h2>
           <p>
-            Whether you drive a car, ride a bike, or operate commercial vehicles,
-            we have the perfect insurance solution for you.
+            Whether you drive a car, ride a bike, operate commercial vehicles, or need personal
+            health and life coverage, we have the perfect solution for you.
           </p>
         </div>
 
@@ -74,11 +65,7 @@ const InsuranceTypes = () => {
 
               <h3>{item.title}</h3>
 
-              <ul>
-                {item.features.map((feature, i) => (
-                  <li key={i}>{feature}</li>
-                ))}
-              </ul>
+              <p className="card-description">{item.description}</p>
 
               <Link to="/services" className="learn-more-link">
                 Learn More →

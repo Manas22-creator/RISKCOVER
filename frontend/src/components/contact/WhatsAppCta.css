@@ -142,3 +142,39 @@
     gap: 1.5rem;
   }
 }
+
+@media (max-width: 576px) {
+  .whatsapp-cta-section {
+    padding: 2rem 1rem;
+    margin: 2rem 0.5rem;
+  }
+
+  .whatsapp-left {
+    gap: 1rem;
+  }
+
+  .whatsapp-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.4rem;
+  }
+
+  .whatsapp-content h3 {
+    font-size: 0.95rem;
+  }
+
+  .whatsapp-content p {
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-features {
+    font-size: 0.85rem;
+    gap: 0.5rem 0.75rem;
+  }
+
+  .whatsapp-btn {
+    padding: 10px 20px;
+    min-width: 130px;
+    font-size: 0.9rem;
+  }
+}
